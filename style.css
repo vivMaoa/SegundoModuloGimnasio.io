@@ -11,18 +11,17 @@ height: 100%;
 margin: 0;
 padding: 0;
 box-sizing: border-box;
-scroll-behavior: smooth; /* Animación suave al hacer scroll */
+scroll-behavior: smooth; 
 overflow: hidden; 
 }
 
 body {
-    display: flex; /* Para evitar que el cuerpo colapse */
+    display: flex; 
     flex-direction: column;
 }
 
 header {
     background-color: #000000cb;
-    padding: .5rem;
     box-shadow: 0 .5rem 2rem #900404;
     position: fixed;
     width: 100%;
@@ -32,20 +31,19 @@ header {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 6vh;
 }
 
 .navbar img {
-    height: 4rem;
-    width: 4rem;
-
-
+    height: 2rem;
+    width: 2rem;
 }
 
 .navbar div h1{
     color: #f5f5f5;
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: 1s;
 }
 .navbar div h1:hover {
@@ -65,7 +63,7 @@ header {
 }
 
 .navbar li {
-    font-size: 1.5rem;
+    font-size: 1.08rem;
     
 }
 .navbar li a {
@@ -87,17 +85,16 @@ header {
 }
 
 main {
-    height: 100vh; /* Ocupa toda la ventana */
-    scroll-snap-type: y mandatory; /* Activa el scroll snapping vertical */
-    overflow-y: scroll; /* Habilita el scroll para sus hijos */
-
+    height: 100vh; 
+    scroll-snap-type: y mandatory; 
+    overflow-y: scroll; 
 }
 
 
 
 
 .section {
-    height: 100vh; /* Let the height adjust to the content */
+    height: 100vh; 
     color: white;
     display: flex;
     flex-direction: column;
@@ -138,9 +135,8 @@ main {
 /*Aqui empezamos con la seccion Clases*/
 
 .Clases {
-    background-image: url(images/backgroundclases.png) ;
+    background-image: url(images/backgroundclases.png);
     scroll-snap-align: start;
-
 }
 
 .container {
@@ -168,11 +164,11 @@ main {
     background-color: #000000a6;
     padding: 0.5rem 1.25rem 0.5rem 1.25rem;
     transition: .5;
-    border: solid red 1px;
+    border: solid red 0.063rem;
 }
 
 .container a:hover{
-    box-shadow: 0 0 20px red;
+    box-shadow: 0 0 1.25rem red;
 
 }
 
@@ -223,8 +219,15 @@ main {
     background-image: url(images/backgroundclases.png);
 }
 
+.precios h2 {
+    margin-bottom: 2rem; font-size: 4rem;
+}
+
 .precios img {
-    width: 80%;
+    border-radius: 2rem;
+    border: solid 0.125rem red;
+    height: 60%;
+    width: 60%;
     background-image: url(images/backgroundclases.png);
 }
 
@@ -238,16 +241,20 @@ main {
     scroll-snap-align: start;
 }
 
+.equipo h2 {
+    margin-bottom: 2rem; font-size: 4rem;
+}
+
 .container3 {
     display: grid;
     height: 55vh;
     width: 80%;
     grid-template-columns: repeat(3,1fr);
-    column-gap: 20px;
+    column-gap: 1.25rem;
 }
 
 .container3 div{
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 1.25rem black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,10 +265,14 @@ main {
 }
 
 .container3 div:hover{
-    box-shadow: 0 0 40px rgb(255, 0, 0);
+    box-shadow: 0 0 2.5rem rgb(255, 0, 0);
     transform: scale(1.08);
     color: #ffffffeb;
-    text-shadow: 0 0 4px black;
+    text-shadow: 0 0 0.25rem black;
+}
+
+.Profesor {
+    border-radius: 2rem;
 }
 
 
@@ -297,7 +308,7 @@ main {
     width: 50%;
     height: 55vh;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
     
 }
 .container4 div{
@@ -311,20 +322,20 @@ main {
 }
 .container4 input {
     width: 40%;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
     text-align: center;
     height: 1.5rem;
     background-color: rgba(0, 0, 0, 0.471);
     transition: 1s;
     outline: none;
-    border: solid 2px white;
+    border: solid 0.125rem white;
     color: white;
 }
 
 .container4 input:focus {
     outline: none;
-    border: solid 2px white;
-    box-shadow: 0px 0px 20px red;
+    border: solid 0.125rem white;
+    box-shadow: 0 0 1.25rem red;
     
 }
 
@@ -340,22 +351,22 @@ grid-row: 2;
 grid-row: 3; 
 align-self: center;  
 justify-self: center;
-padding: 10px 30px 10px 30px;
-border-radius: 12px 12px 12px 12px;
+padding: 0.625rem 1.875rem 0.625rem 1.875rem;
+border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
 background-color: rgba(0, 0, 0, 0.429);
 color: white;
 font-size: 1.1rem;
-border: solid 1.5px white;
+border: solid 0.094rem white;
 transition: transform 0.1s ease, box-shadow 0.3s ease; 
 }
 
 .container4 button:hover {
-box-shadow: 0 0 30px red;
+box-shadow: 0 0 1.875rem red;
 }
 
 .container4 button:active { 
 background-color: rgb(255, 0, 0);
-box-shadow: 0 0 20px red; 
+box-shadow: 0 0 1.25rem red; 
 }
 
 /*Aqui empezamos con Footer*/
@@ -363,13 +374,13 @@ box-shadow: 0 0 20px red;
 footer {
     display: flex;
     flex-direction: column;
-    height: 10%;
+    height: 8%;
     width: 100%;
     background-color: black;
     align-items: center;
     justify-content: center;
     color: white;
-    box-shadow: 0 0 40px red;
+    box-shadow: 0 0 2.5rem red;
 }
 
 footer .social-links{
@@ -381,16 +392,180 @@ footer .social-links{
 }
 
 footer .social-links img{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     
 }
 
 footer .copyright {
+    font-size: .5rem;
     color: white;
     
 }
 
+
+@media (max-width: 900px) {
+    html {
+        font-size: 10px;
+    }
+
+    .navbar div h1:hover {
+        transform: scale(1.09);
+    }
+
+    .navbar li {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        font-size: 2.5rem;
+    }
+    
+    .hero button {
+        font-size: 1.5rem;
+    }
+    
+    /*Aqui empezamos con la seccion Clases*/
+    
+    .container {
+        height: 60%;
+        width: 90%;
+    }
+
+    .precios img {
+        height: 45%;
+        width: 90%;
+    }
+
+    /*Aqui empezamos con la seccion Equipo*/
+    
+    .container3 {
+        width: 100%;
+        column-gap: .5rem;
+    }
+    .container3 div:hover{
+        transform: scale(1);
+    }
+    
+    
+    /*Aqui empezamos con la seccion Contacto*/
+    
+    .container4 input {
+        width: 100%;
+    }
+}
+
+    @media (max-width: 500px) {
+
+        html{
+            font-size: 8px;
+        }
+        
+        .navbar img {
+            display: none;
+        }
+        
+        .navbar div h1{
+            font-size: 2rem;
+        }
+        
+        .navbar li {
+            font-size: 1.3rem;
+            
+        }
+
+        /*Aqui empezamos con la seccion Hero.*/
+        
+        .hero {
+            font-size: 2rem;
+        }
+        
+        .hero button {
+            font-size: 1.5rem;
+        }
+        
+        /*Aqui empezamos con la seccion Clases*/
+        
+        .container {
+            display: grid;
+            height: 60vh;
+            width: 90vw;
+        }
+
+        /*Aqui empezamos con la seccion Precios*/
+        
+        .precios img {
+            height: 60vh;
+            width: 95vw;
+        }
+        
+        
+        
+        /*Aqui empezamos con la seccion Equipo*/
+
+        
+        .container3 {
+            display: grid;
+            height: 55vh;
+            width: 100%;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,1fr);
+        }
+        .container3 div:hover{
+            text-shadow: 0 0 1rem black;
+        }
+        
+        .Profesor {
+            border-radius: none;
+        }
+        
+        
+        #ProfePesas {
+            background-size: contain;
+        
+        }
+        
+        #ProfeFuerza {
+            background-size: contain;
+        }
+        
+        #ProfeYoga {
+            background-size: contain;
+        }
+        
+        /*Aqui empezamos con la seccion Contacto*/
+        
+        .container4 {
+            width: 100%;
+            
+        }
+        .container4 div{
+            display: block;
+            text-align: center;
+            align-items: center;
+            justify-content: space-around;
+            justify-items: start;
+            font-size: 2rem;
+        
+        }
+        .container4 input {
+            width: 80%;
+        }
+
+        
+        .container4 button {
+        font-size: 1.5rem;
+        }
+        
+        .container4 button:hover {
+        box-shadow: 0 0 1.875rem red;
+        }
+        
+        .container4 button:active { 
+        background-color: rgb(255, 0, 0);
+        box-shadow: 0 0 1.25rem red; 
+        }
+    }
 
 
 
