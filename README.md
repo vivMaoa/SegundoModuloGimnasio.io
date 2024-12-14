@@ -31,3 +31,5 @@ El código CSS se encarga de la presentación visual de la página. Se utilizan 
 ## Motivación
 
 Como se mencionó anteriormente, esta página ha sido desarrollada por iniciativa propia para demostrar mi compromiso con el proyecto.  Espero que este trabajo adicional sea valorado como una muestra de mi motivación y de mi voluntad de continuar aprendiendo y contribuyendo al equipo.
+
+https://vivmaoa.github.io/SegundoModuloGimnasio.io/
